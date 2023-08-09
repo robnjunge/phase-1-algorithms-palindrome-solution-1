@@ -1,6 +1,18 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(string) {
+  const arrayValues = string.split("")
+  const reverseArrayValues = arrayValues.reverse();
+  const joinArrayValues = reverseArrayValues.join("");
+  if(string === joinArrayValues) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
+const string = prompt("type here")
+
+isPalindrome(string)
+
 
 /* 
   Add your pseudocode here
